@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fusion systems - Advanced Utility Systems</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <div class="logo-icon">⚡</div>
+                <div>
+                    <h1>Fusion systems</h1>
+                    <p>Powering the Future Since 2087</p>
+                </div>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active" data-page="home">Home</a></li>
+                    <li><a href="#bills" class="nav-link" data-page="bills">View Bills</a></li>
+                    <li><a href="#payment-history" class="nav-link" data-page="payment-history">Payment History</a></li>
+                    <li><a href="#paperless" class="nav-link" data-page="paperless">Paperless Billing</a></li>
+                    <li><a href="#account" class="nav-link" data-page="account">Account Settings</a></li>
+                    <li><a href="#contact" class="nav-link" data-page="contact">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <!-- Home Page -->
+            <section id="home" class="page active">
+                <div class="hero">
+                    <h2>Welcome to Fusion systems</h2>
+                    <p>Advanced quantum-powered infrastructure for the next generation. We deliver cutting-edge energy, water, and atmospheric processing services to the megacities of tomorrow.</p>
+                    <div class="hero-stats">
+                        <div class="stat-card">
+                            <div class="stat-icon">🏢</div>
+                            <h3>2.5M+</h3>
+                            <p>Connected Units</p>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">⚡</div>
+                            <h3>99.9%</h3>
+                            <p>Uptime Efficiency</p>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">🤖</div>
+                            <h3>24/7</h3>
+                            <p>AI Monitoring</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="content-card">
+                    <h3>Our Services</h3>
+                    <div class="services-grid">
+                        <div class="service-card">
+                            <div class="service-icon">⚡</div>
+                            <h4>Quantum Energy Grid</h4>
+                            <p>Advanced fusion-powered energy distribution with zero-emission protocols.</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon">💧</div>
+                            <h4>Atmospheric Processing</h4>
+                            <p>Advanced water synthesis and atmospheric moisture extraction systems.</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon">🔥</div>
+                            <h4>Plasma Heating</h4>
+                            <p>High-efficiency plasma-based thermal energy with AI optimization.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- View Bills Page -->
+            <section id="bills" class="page">
+                <h2>View Your Bills</h2>
+                <div class="content-card">
+                    <p>Access your quantum energy consumption data, atmospheric processing reports, and plasma thermal usage analytics through our advanced neural interface.</p>
+                    <div class="bill-preview">
+                        <div class="bill-card">
+                            <div class="bill-header">
+                                <div class="bill-icon">⚡</div>
+                                <div>
+                                    <h4>Quantum Energy Grid</h4>
+                                    <p>Cycle 2087.12</p>
+                                </div>
+                            </div>
+                            <div class="bill-amount">₵2,847.50</div>
+                            <div class="bill-details">
+                                <p><strong>Due Date:</strong> Cycle 2088.01</p>
+                                <p><strong>Usage:</strong> 12,470 QE Units</p>
+                                <p><strong>Previous Reading:</strong> 84,530 QE Units</p>
+                            </div>
+                            <button class="btn btn-primary">View Details</button>
+                        </div>
+                        <div class="bill-card">
+                            <div class="bill-header">
+                                <div class="bill-icon">💧</div>
+                                <div>
+                                    <h4>Atmospheric Processing</h4>
+                                    <p>Cycle 2087.12</p>
+                                </div>
+                            </div>
+                            <div class="bill-amount">₵1,892.00</div>
+                            <div class="bill-details">
+                                <p><strong>Due Date:</strong> Cycle 2088.01</p>
+                                <p><strong>Usage:</strong> 42,000 H2O Units</p>
+                                <p><strong>Previous Reading:</strong> 128,000 H2O Units</p>
+                            </div>
+                            <button class="btn btn-primary">View Details</button>
+                        </div>
+                        <div class="bill-card">
+                            <div class="bill-header">
+                                <div class="bill-icon">🔥</div>
+                                <div>
+                                    <h4>Plasma Thermal</h4>
+                                    <p>Cycle 2087.12</p>
+                                </div>
+                            </div>
+                            <div class="bill-amount">₵3,568.00</div>
+                            <div class="bill-details">
+                                <p><strong>Due Date:</strong> Cycle 2088.01</p>
+                                <p><strong>Usage:</strong> 890 PT Units</p>
+                                <p><strong>Previous Reading:</strong> 12,340 PT Units</p>
+                            </div>
+                            <button class="btn btn-primary">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Payment History Page -->
+            <section id="payment-history" class="page">
+                <h2>Payment History</h2>
+                <div class="content-card">
+                    <p>Track all your past payments and transactions with Metro City Utilities.</p>
+                    <div class="payment-table">
+                        <div class="table-header">
+                            <span>Date</span>
+                            <span>Service</span>
+                            <span>Amount</span>
+                            <span>Status</span>
+                        </div>
+                        <div class="table-row">
+                            <span data-label="Date">Dec 10, 2024</span>
+                            <span data-label="Service">Electricity</span>
+                            <span data-label="Amount">$125.30</span>
+                            <span class="status paid" data-label="Status">Paid</span>
+                        </div>
+                        <div class="table-row">
+                            <span data-label="Date">Dec 10, 2024</span>
+                            <span data-label="Service">Water</span>
+                            <span data-label="Amount">$87.50</span>
+                            <span class="status paid" data-label="Status">Paid</span>
+                        </div>
+                        <div class="table-row">
+                            <span data-label="Date">Nov 12, 2024</span>
+                            <span data-label="Service">Electricity</span>
+                            <span data-label="Amount">$118.75</span>
+                            <span class="status paid" data-label="Status">Paid</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Paperless Billing Page -->
+            <section id="paperless" class="page">
+                <h2>Paperless Billing</h2>
+                <div class="content-card">
+                    <div class="paperless-intro">
+                        <div class="intro-icon">🌱</div>
+                        <div>
+                            <h3>Neural Interface Billing</h3>
+                            <p>Experience the future of utility management with our advanced neural interface system. Receive real-time consumption data directly to your neural implant, access quantum-encrypted billing through our secure matrix, and contribute to our zero-waste protocols.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="benefits-grid">
+                        <div class="benefit-item">
+                            <div class="benefit-icon">🧠</div>
+                            <h4>Neural Sync</h4>
+                            <p>Direct data transmission to your neural implant</p>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">🔒</div>
+                            <h4>Quantum Encryption</h4>
+                            <p>Unbreakable security through quantum protocols</p>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">🌍</div>
+                            <h4>Zero Waste</h4>
+                            <p>Complete elimination of physical materials</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="web-component-container">
+                    <invoicecloud-paperless></invoicecloud-paperless>
+                </div>
+            </section>
+
+            <!-- Account Settings Page -->
+            <section id="account" class="page">
+                <h2>Account Settings</h2>
+                <div class="content-card">
+                    <p>Manage your account preferences, update personal information, and configure notification settings.</p>
+                    <div class="settings-grid">
+                        <div class="setting-card">
+                            <h4>Personal Information</h4>
+                            <p>Update your name, address, and contact details</p>
+                            <button class="btn btn-secondary">Edit</button>
+                        </div>
+                        <div class="setting-card">
+                            <h4>Notification Preferences</h4>
+                            <p>Choose how you want to receive bill notifications</p>
+                            <button class="btn btn-secondary">Configure</button>
+                        </div>
+                        <div class="setting-card">
+                            <h4>Payment Methods</h4>
+                            <p>Manage your saved payment methods</p>
+                            <button class="btn btn-secondary">Manage</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Us Page -->
+            <section id="contact" class="page">
+                <h2>Contact Us</h2>
+                <div class="content-card">
+                    <p>Get in touch with our customer service team. We're here to help with any questions or concerns.</p>
+                    <div class="contact-info">
+                        <div class="contact-card">
+                            <h4>Customer Service</h4>
+                            <p>Phone: (555) 123-4567</p>
+                            <p>Email: support@metrocityutilities.com</p>
+                            <p>Hours: Mon-Fri 8AM-6PM</p>
+                        </div>
+                        <div class="contact-card">
+                            <h4>Emergency Service</h4>
+                            <p>Phone: (555) 911-UTIL</p>
+                            <p>Available 24/7 for emergencies</p>
+                        </div>
+                        <div class="contact-card">
+                            <h4>Office Address</h4>
+                            <p>123 Utility Street</p>
+                            <p>Metro City, MC 12345</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2087 Fusion systems. All rights reserved. | Neural Interface Protocol v3.7</p>
+        </div>
+    </footer>
+
+    <!-- Your custom web component script -->
+    <script type="module" src="https://paperless-microfrontend.netlify.app/static/js/invoicecloud-paperless.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
