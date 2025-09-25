@@ -57,89 +57,65 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // // Add smooth scrolling for anchor links
-    // document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    //     anchor.addEventListener('click', function (e) {
-    //         e.preventDefault();
-    //         const target = document.querySelector(this.getAttribute('href'));
-    //         if (target) {
-    //             target.scrollIntoView({
-    //                 behavior: 'smooth',
-    //                 block: 'start'
-    //             });
-    //         }
-    //     });
-    // });
 
     // Add loading animation for web component
-    const webComponentContainer = document.querySelector('.web-component-container');
-    if (webComponentContainer) {
-        // Add a loading indicator while the web component loads
-        const loadingIndicator = document.createElement('div');
-        loadingIndicator.innerHTML = `
-            <div style="
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                padding: 2rem;
-                color: var(--text-secondary);
-            ">
-                <div style="
-                    width: 40px;
-                    height: 40px;
-                    border: 3px solid var(--shadow-dark);
-                    border-top: 3px solid var(--primary-color);
-                    border-radius: 50%;
-                    animation: spin 1s linear infinite;
-                    margin-bottom: 1rem;
-                "></div>
-                <p>Loading Paperless Billing Component...</p>
-            </div>
-        `;
+    // const webComponentContainer = document.querySelector('.web-component-container');
+    // if (webComponentContainer) {
+    //     // Add a loading indicator while the web component loads
+    //     const loadingIndicator = document.createElement('div');
+    //     loadingIndicator.innerHTML = `
+    //         <div style="
+    //             display: flex;
+    //             flex-direction: column;
+    //             align-items: center;
+    //             justify-content: center;
+    //             padding: 2rem;
+    //             color: var(--text-secondary);
+    //         ">
+    //             <div style="
+    //                 width: 40px;
+    //                 height: 40px;
+    //                 border: 3px solid var(--shadow-dark);
+    //                 border-top: 3px solid var(--primary-color);
+    //                 border-radius: 50%;
+    //                 animation: spin 1s linear infinite;
+    //                 margin-bottom: 1rem;
+    //             "></div>
+    //             <p>Loading Paperless Billing Component...</p>
+    //         </div>
+    //     `;
         
-        // Add CSS for spinner animation
-        const style = document.createElement('style');
-        style.textContent = `
-            @keyframes spin {
-                0% { transform: rotate(0deg); }
-                100% { transform: rotate(360deg); }
-            }
-        `;
-        document.head.appendChild(style);
+    //     // Add CSS for spinner animation
+    //     const style = document.createElement('style');
+    //     style.textContent = `
+    //         @keyframes spin {
+    //             0% { transform: rotate(0deg); }
+    //             100% { transform: rotate(360deg); }
+    //         }
+    //     `;
+    //     document.head.appendChild(style);
         
-        webComponentContainer.appendChild(loadingIndicator);
+    //     webComponentContainer.appendChild(loadingIndicator);
         
-        // Remove loading indicator when web component loads
-        const observer = new MutationObserver(function(mutations) {
-            mutations.forEach(function(mutation) {
-                if (mutation.type === 'childList') {
-                    const paperlessComponent = webComponentContainer.querySelector('invoicecloud-paperless');
-                    if (paperlessComponent) {
-                        loadingIndicator.remove();
-                        observer.disconnect();
-                    }
-                }
-            });
-        });
+    //     // Remove loading indicator when web component loads
+    //     const observer = new MutationObserver(function(mutations) {
+    //         mutations.forEach(function(mutation) {
+    //             if (mutation.type === 'childList') {
+    //                 const paperlessComponent = webComponentContainer.querySelector('invoicecloud-paperless');
+    //                 if (paperlessComponent) {
+    //                     loadingIndicator.remove();
+    //                     observer.disconnect();
+    //                 }
+    //             }
+    //         });
+    //     });
         
-        observer.observe(webComponentContainer, {
-            childList: true,
-            subtree: true
-        });
-    }
+    //     observer.observe(webComponentContainer, {
+    //         childList: true,
+    //         subtree: true
+    //     });
+    // }
 
-    // // Add some interactive effects
-    // const cards = document.querySelectorAll('.stat-card, .bill-card, .setting-card, .contact-card');
-    // cards.forEach(card => {
-    //     card.addEventListener('mouseenter', function() {
-    //         this.style.transform = 'translateY(-5px)';
-    //     });
-        
-    //     card.addEventListener('mouseleave', function() {
-    //         this.style.transform = 'translateY(0)';
-    //     });
-    // });
 
     // Add click effects to buttons
     const buttons = document.querySelectorAll('.btn');
@@ -187,51 +163,3 @@ document.addEventListener('DOMContentLoaded', function() {
     `;
     document.head.appendChild(rippleStyle);
 });
-
-// Utility functions
-function showNotification(message, type = 'info') {
-    const notification = document.createElement('div');
-    notification.className = `notification notification-${type}`;
-    notification.innerHTML = `
-        <div style="
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            background: var(--surface);
-            color: var(--text-primary);
-            padding: 1rem 1.5rem;
-            border-radius: var(--border-radius-small);
-            box-shadow: 8px 8px 16px var(--shadow-dark), -8px -8px 16px var(--shadow-light);
-            z-index: 1000;
-            animation: slideIn 0.3s ease-out;
-        ">
-            ${message}
-        </div>
-    `;
-    
-    const slideInStyle = document.createElement('style');
-    slideInStyle.textContent = `
-        @keyframes slideIn {
-            from {
-                transform: translateX(100%);
-                opacity: 0;
-            }
-            to {
-                transform: translateX(0);
-                opacity: 1;
-            }
-        }
-    `;
-    document.head.appendChild(slideInStyle);
-    
-    document.body.appendChild(notification);
-    
-    setTimeout(() => {
-        notification.remove();
-    }, 3000);
-}
-
-// Export functions for potential use
-window.MetroCityUtils = {
-    showNotification
-};
