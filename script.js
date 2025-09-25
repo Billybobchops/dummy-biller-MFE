@@ -23,9 +23,6 @@ document.addEventListener('DOMContentLoaded', function() {
             // Close mobile menu if open
             nav.classList.remove('active');
             mobileMenuToggle.classList.remove('active');
-            
-            // Scroll to top of page
-            window.scrollTo(0, 0);
         });
     });
 
