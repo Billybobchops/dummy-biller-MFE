@@ -426,7 +426,8 @@ p {
 
 /* Web Component Container */
 .web-component-container {
-    background: var(--gradient-card);
+    /* background: var(--gradient-card); */
+    background: #fff;
     padding: var(--spacing-xl);
     border: 2px solid var(--accent-color);
     border-radius: var(--border-radius);
