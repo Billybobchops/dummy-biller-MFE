@@ -71,6 +71,7 @@ invoicecloud-paperless {
     /* Labels */
     --invoicecloud-label-font-size: 0.875rem;
     --invoicecloud-label-font-weight: 600;
+	--invoicecloud-label-color: #fff;
 
     /* Primary Buttons */
     --invoicecloud-primary-button-background-color: linear-gradient(
@@ -142,7 +143,7 @@ invoicecloud-paperless {
     );
     --invoicecloud-table-chevron-color: #00ffff;
 
-    /* .web-component-container {
+    .web-component-container {
         background: var(--gradient-card) !important;
-    } */
+    }
 }
