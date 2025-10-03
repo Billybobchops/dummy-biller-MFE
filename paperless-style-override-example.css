@@ -1,98 +1,146 @@
 invoicecloud-paperless {
-	/* Alert */
-	--invoicecloud-alert-border-radius: 12px;
-	--invoicecloud-alert-font-size: 1rem;
-	--invoicecloud-alert-line-height: 1.6;
-	--invoicecloud-alert-margin-bottom: 1.5rem;
-	--invoicecloud-alert-padding: 1rem 1.5rem;
-	
-	/* Checkboxes */
-	--invoicecloud-checkbox-border: 1px solid rgba(0, 255, 255, 0.3);
-	--invoicecloud-checkbox-check-color: #00ffff;
-	--invoicecloud-checkbox-check-shape: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
-	--invoicecloud-checkbox-checked-background-color: linear-gradient(135deg, #00ffff 0%, #0099cc 100%);
-	--invoicecloud-checkbox-box-height: 20px;
-	--invoicecloud-checkbox-box-width: 20px;
-	--invoicecloud-checkbox-height: 20px;
-	--invoicecloud-checkbox-width: 20px;
-	--invoicecloud-checkbox-border-hover-color: #00ffff;
-	--invoicecloud-checkbox-transition: all 0.3s ease;
-	--invoicecloud-checkbox-transform-origin: center;
-	--invoicecloud-checkbox-focus-border-radius: 6px;
-	--invoicecloud-checkbox-focus-outline: 0 0 0 2px rgba(0, 255, 255, 0.5);
-	--invoicecloud-checkbox-focus-transform: scale(1.05);
-	--invoicecloud-checkbox-disabled-background-color: #1a1a2e;
-	
-	/* Dividers */
-	--invoicecloud-divider-light: rgba(0, 255, 255, 0.2);
-	--invoicecloud-divider-dark: rgba(0, 255, 255, 0.1);
-	
-	/* Typography */
-	--invoicecloud-h1-font-size: 2.5rem;
-	--invoicecloud-h2-font-size: 2rem;
-	--invoicecloud-h3-font-size: 1.5rem;
-	--invoicecloud-h4-font-size: 1.25rem;
-	--invoicecloud-h5-font-size: 1.125rem;
-	--invoicecloud-h6-font-size: 1rem;
-	--invoicecloud-heading-margin: 0 0 1.5rem 0;
-	--invoicecloud-body-font-size: 1rem;
-	--invoicecloud-body-font-size-xs: 0.75rem;
-	--invoicecloud-body-font-size-s: 0.875rem;
-	--invoicecloud-body-font-line-height: 1.6;
-	--invoicecloud-unordered-list-margin: 0 0 1rem 1.5rem;
-	
-	/* Inline Link */
-	--invoicecloud-inline-link-color: #00ffff;
-	--invoicecloud-inline-link-color-hover: #ff0080;
-	--invoicecloud-inline-link-text-decoration: none;
-	--invoicecloud-inline-link-default-color: #00ffff;
-	--invoicecloud-inline-link-default-color-hover: #ff0080;
-	
-	/* Labels */
-	--invoicecloud-label-font-size: 0.875rem;
-	--invoicecloud-label-font-weight: 600;
-	
-	/* Primary Buttons */
-	--invoicecloud-primary-button-background-color: linear-gradient(135deg, #00ffff 0%, #0099cc 100%);
-	--invoicecloud-primary-button-background-color-hover: linear-gradient(135deg, #ff0080 0%, #ff0040 100%);
-	--invoicecloud-primary-button-border: 1px solid #00ffff;
-	--invoicecloud-primary-button-border-radius: 6px;
-	--invoicecloud-primary-button-color: #000000;
-	--invoicecloud-primary-button-border-outline: 0 0 15px rgba(0, 255, 255, 0.2);
-	--invoicecloud-primary-button-border-outline-hover: 0 0 25px rgba(255, 0, 128, 0.4);
-	--invoicecloud-primary-button-font-size: 1rem;
-	--invoicecloud-primary-button-font-weight: 600;
-	--invoicecloud-primary-button-margin: 0;
-	--invoicecloud-primary-button-padding: 1rem 1.5rem;
-	--invoicecloud-primary-button-error-background-color: linear-gradient(135deg, #ff0040 0%, #ff6600 100%);
-	--invoicecloud-primary-button-error-background-color-hover: linear-gradient(135deg, #ff6600 0%, #ff0040 100%);
-	--invoicecloud-primary-button-inner-align-items: center;
-	--invoicecloud-primary-button-inner-display: flex;
-	--invoicecloud-primary-button-inner-justify-content: center;
-	--invoicecloud-primary-button-inner-gap: 0.5rem;
-	--invoicecloud-primary-button-disabled-border: 1px solid rgba(0, 255, 255, 0.2);
-	--invoicecloud-primary-button-disabled-border-hover: 1px solid rgba(0, 255, 255, 0.2);
-	--invoicecloud-primary-button-disabled-background-color: #1a1a2e;
-	--invoicecloud-primary-button-disabled-background-color-hover: #1a1a2e;
-	--invoicecloud-primary-button-disabled-color: #b0b0b0;
-	--invoicecloud-primary-button-disabled-color-hover: #b0b0b0;
-	
-	/* TABLES */
-	--invoicecloud-table-background-color: #1a1a2e;
-	--invoicecloud-table-background-color-odd: #16213e;
-	--invoicecloud-table-margin-bottom: 1.5rem;
-	--invoicecloud-table-min-width: 100%;
-	--invoicecloud-table-width: 100%;
-	--invoicecloud-table-row-padding: 1rem;
-	--invoicecloud-table-active-row-border-color: #00ffff;
-	--invoicecloud-table-pagination-select-border: 1px solid rgba(0, 255, 255, 0.3);
-	--invoicecloud-table-pagination-select-border-radius: 6px;
-	--invoicecloud-table-pagination-numeral-color: #ffffff;
-	--invoicecloud-table-pagination-numeral-border-radius: 6px;
-	--invoicecloud-table-pagination-numeral-font-weight: 500;
-	--invoicecloud-table-pagination-numeral-font-size: 0.875rem;
-	--invoicecloud-table-pagination-numeral-selected-background-color: #00ffff;
-	--invoicecloud-table-pagination-numeral-selected-color: #000000;
-	--invoicecloud-table-dynamic-active-row-action-background-color: rgba(0, 255, 255, 0.1);
-	--invoicecloud-table-chevron-color: #00ffff;
+    /* Alert */
+    --invoicecloud-alert-border-radius: 12px;
+    --invoicecloud-alert-font-size: 1rem;
+    --invoicecloud-alert-line-height: 1.6;
+    --invoicecloud-alert-margin-bottom: 1.5rem;
+    --invoicecloud-alert-padding: 1rem 1.5rem;
+
+    /* Checkboxes */
+    --invoicecloud-checkbox-border: 1px solid rgba(0, 255, 255, 0.3);
+    --invoicecloud-checkbox-check-color: #00ffff;
+    --invoicecloud-checkbox-check-shape: polygon(
+        14% 44%,
+        0 65%,
+        50% 100%,
+        100% 16%,
+        80% 0%,
+        43% 62%
+    );
+    --invoicecloud-checkbox-checked-background-color: linear-gradient(
+        135deg,
+        #00ffff 0%,
+        #0099cc 100%
+    );
+    --invoicecloud-checkbox-box-height: 20px;
+    --invoicecloud-checkbox-box-width: 20px;
+    --invoicecloud-checkbox-height: 20px;
+    --invoicecloud-checkbox-width: 20px;
+    --invoicecloud-checkbox-border-hover-color: #00ffff;
+    --invoicecloud-checkbox-transition: all 0.3s ease;
+    --invoicecloud-checkbox-transform-origin: center;
+    --invoicecloud-checkbox-focus-border-radius: 6px;
+    --invoicecloud-checkbox-focus-outline: 0 0 0 2px rgba(0, 255, 255, 0.5);
+    --invoicecloud-checkbox-focus-transform: scale(1.05);
+    --invoicecloud-checkbox-disabled-background-color: #1a1a2e;
+
+    /* Dividers */
+    --invoicecloud-divider-light: rgba(0, 255, 255, 0.2);
+    --invoicecloud-divider-dark: rgba(0, 255, 255, 0.1);
+
+    /* Typography */
+    --invoicecloud-h1-font-size: 2.5rem;
+	--invoicecloud-heading-1-color: #00ffff;
+	--invoicecloud-heading-2-color: #00ffff;
+	--invoicecloud-heading-3-color: #00ffff;
+	--invoicecloud-heading-4-color: #00ffff;
+	--invoicecloud-heading-5-color: #00ffff;
+	--invoicecloud-heading-6-color: #00ffff;
+    --invoicecloud-h2-font-size: 2rem;
+    --invoicecloud-h3-font-size: 1.5rem;
+    --invoicecloud-h4-font-size: 1.25rem;
+    --invoicecloud-h5-font-size: 1.125rem;
+    --invoicecloud-h6-font-size: 1rem;
+    --invoicecloud-heading-margin: 0 0 1.5rem 0;
+	--invoicecloud-body-font-color: #fff;
+    --invoicecloud-body-font-size: 1rem;
+    --invoicecloud-body-font-size-xs: 0.75rem;
+    --invoicecloud-body-font-size-s: 0.875rem;
+    --invoicecloud-body-font-line-height: 1.6;
+    --invoicecloud-unordered-list-margin: 0 0 1rem 1.5rem;
+
+    /* Inline Link */
+    --invoicecloud-inline-link-color: #00ffff;
+    --invoicecloud-inline-link-color-hover: #ff0080;
+    --invoicecloud-inline-link-text-decoration: none;
+    --invoicecloud-inline-link-default-color: #00ffff;
+    --invoicecloud-inline-link-default-color-hover: #ff0080;
+
+    /* Labels */
+    --invoicecloud-label-font-size: 0.875rem;
+    --invoicecloud-label-font-weight: 600;
+
+    /* Primary Buttons */
+    --invoicecloud-primary-button-background-color: linear-gradient(
+        135deg,
+        #00ffff 0%,
+        #0099cc 100%
+    );
+    --invoicecloud-primary-button-background-color-hover: linear-gradient(
+        135deg,
+        #ff0080 0%,
+        #ff0040 100%
+    );
+    --invoicecloud-primary-button-border: 1px solid #00ffff;
+    --invoicecloud-primary-button-border-radius: 6px;
+    --invoicecloud-primary-button-color: #00ffff;
+    --invoicecloud-primary-button-border-outline: 0 0 15px
+        rgba(0, 255, 255, 0.2);
+    --invoicecloud-primary-button-border-outline-hover: 0 0 25px
+        rgba(255, 0, 128, 0.4);
+    --invoicecloud-primary-button-font-size: 1rem;
+    --invoicecloud-primary-button-font-weight: 600;
+    --invoicecloud-primary-button-margin: 0;
+    --invoicecloud-primary-button-padding: 1rem 1.5rem;
+    --invoicecloud-primary-button-error-background-color: linear-gradient(
+        135deg,
+        #ff0040 0%,
+        #ff6600 100%
+    );
+    --invoicecloud-primary-button-error-background-color-hover: linear-gradient(
+        135deg,
+        #ff6600 0%,
+        #ff0040 100%
+    );
+    --invoicecloud-primary-button-inner-align-items: center;
+    --invoicecloud-primary-button-inner-display: flex;
+    --invoicecloud-primary-button-inner-justify-content: center;
+    --invoicecloud-primary-button-inner-gap: 0.5rem;
+    --invoicecloud-primary-button-disabled-border: 1px solid
+        rgba(0, 255, 255, 0.2);
+    --invoicecloud-primary-button-disabled-border-hover: 1px solid
+        rgba(0, 255, 255, 0.2);
+    --invoicecloud-primary-button-disabled-background-color: #1a1a2e;
+    --invoicecloud-primary-button-disabled-background-color-hover: #1a1a2e;
+    --invoicecloud-primary-button-disabled-color: #b0b0b0;
+    --invoicecloud-primary-button-disabled-color-hover: #b0b0b0;
+
+    /* TABLES */
+    --invoicecloud-table-background-color: #1a1a2e;
+    --invoicecloud-table-background-color-odd: #16213e;
+    --invoicecloud-table-margin-bottom: 1.5rem;
+    --invoicecloud-table-min-width: 100%;
+    --invoicecloud-table-width: 100%;
+    --invoicecloud-table-row-padding: 1rem;
+    --invoicecloud-table-active-row-border-color: #00ffff;
+    --invoicecloud-table-pagination-select-border: 1px solid
+        rgba(0, 255, 255, 0.3);
+    --invoicecloud-table-pagination-select-border-radius: 6px;
+    --invoicecloud-table-pagination-numeral-color: #ffffff;
+    --invoicecloud-table-pagination-numeral-border-radius: 6px;
+    --invoicecloud-table-pagination-numeral-font-weight: 500;
+    --invoicecloud-table-pagination-numeral-font-size: 0.875rem;
+    --invoicecloud-table-pagination-numeral-selected-background-color: #00ffff;
+    --invoicecloud-table-pagination-numeral-selected-color: #000000;
+    --invoicecloud-table-dynamic-active-row-action-background-color: rgba(
+        0,
+        255,
+        255,
+        0.1
+    );
+    --invoicecloud-table-chevron-color: #00ffff;
+
+    .web-component-container {
+        background: var(--gradient-card);
+    }
 }
