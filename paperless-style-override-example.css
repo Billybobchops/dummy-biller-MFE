@@ -125,6 +125,7 @@ invoicecloud-paperless {
     --invoicecloud-table-min-width: 100%;
     --invoicecloud-table-width: 100%;
     --invoicecloud-table-row-padding: 1rem;
+	--invoicecloud-table-row-color: #fff;
     --invoicecloud-table-active-row-border-color: #00ffff;
     --invoicecloud-table-pagination-select-border: 1px solid
         rgba(0, 255, 255, 0.3);
@@ -142,8 +143,8 @@ invoicecloud-paperless {
         0.1
     );
     --invoicecloud-table-chevron-color: #00ffff;
+}
 
-    .web-component-container {
-        background: var(--gradient-card) !important;
-    }
+.web-component-container {
+	background: var(--gradient-card) !important;
 }
