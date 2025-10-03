@@ -1,5 +1,7 @@
 invoicecloud-paperless {
-    /* Alert */
+    --invoicecloud-paperless-background: transparent;
+	
+	/* Alert */
     --invoicecloud-alert-border-radius: 12px;
     --invoicecloud-alert-font-size: 1rem;
     --invoicecloud-alert-line-height: 1.6;
@@ -140,7 +142,7 @@ invoicecloud-paperless {
     );
     --invoicecloud-table-chevron-color: #00ffff;
 
-    .web-component-container {
-        background: var(--gradient-card);
-    }
+    /* .web-component-container {
+        background: var(--gradient-card) !important;
+    } */
 }
