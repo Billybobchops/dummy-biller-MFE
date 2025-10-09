@@ -119,6 +119,7 @@ invoicecloud-paperless {
     --invoicecloud-primary-button-disabled-color-hover: #b0b0b0;
 
 	--invoicecloud-switch-color: #fff;
+	--invoicecloud-switch-on-background-color: var(--accent-color);
 
     /* TABLES */
     --invoicecloud-table-background-color: #1a1a2e;
@@ -146,6 +147,8 @@ invoicecloud-paperless {
     );
 	--invoicecloud-table-background-color-even: var(--background);
     --invoicecloud-table-chevron-color: #00ffff;
+
+	--invoicecloud-kebab-button-background-color: #00ffff;
 }
 
 .web-component-container {
