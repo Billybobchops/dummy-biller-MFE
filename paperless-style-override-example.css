@@ -118,6 +118,8 @@ invoicecloud-paperless {
     --invoicecloud-primary-button-disabled-color: #b0b0b0;
     --invoicecloud-primary-button-disabled-color-hover: #b0b0b0;
 
+	--invoicecloud-switch-color: #fff;
+
     /* TABLES */
     --invoicecloud-table-background-color: #1a1a2e;
     --invoicecloud-table-background-color-odd: #16213e;
