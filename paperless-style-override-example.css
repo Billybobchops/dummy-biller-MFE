@@ -142,6 +142,7 @@ invoicecloud-paperless {
         255,
         0.1
     );
+	--invoicecloud-table-background-color-even: var(--background);
     --invoicecloud-table-chevron-color: #00ffff;
 }
 
