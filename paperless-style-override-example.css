@@ -1,3 +1,11 @@
+:root {
+	--invoicecloud-heading-2-color: #00c9c9;
+}
+
+:host {
+	--invoicecloud-heading-2-color: #00c9c9;
+}
+
 invoicecloud-paperless {
     --invoicecloud-paperless-background: transparent;
 	
